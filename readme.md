@@ -34,7 +34,7 @@ If you find our code  helpful for your research, please consider citing:
 - Get KNN-GIQA score:
 
   ```
-  python knn_score.py path/to/test-folder --act_path path/to/activation --pca_path path/to/pca --K number/of/nearest-neighbor --gpu gpu_id
+  python knn_score.py path/to/test-folder --act_path path/to/activation --pca_path path/to/pca --K number/of/nearest-neighbor --output_file output/file/path --gpu gpu_id
   ```
 - Build GMM model:
 
@@ -44,7 +44,7 @@ If you find our code  helpful for your research, please consider citing:
 - Get GMM-GIQA score:
 
   ```
-  python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --gpu gpu_id
+  python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --ourput_file output/file/path --gpu gpu_id
   ```
 
 - For all these running bash, if we do not use PCA (such as FFHQ), just remove the pca_rate and pca_path options.
