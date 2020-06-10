@@ -24,7 +24,7 @@ If you find our code  helpful for your research, please consider citing:
 - CUDA9.2 or 10.
 
 ### Running code
-- Download pretrained models [here](https://drive.google.com/drive/folders/17fAzhyQGXwgSJYO1PhmbnSl72FAE4VCJ?usp=sharing).  We provide the FFHQ-256 GMM model and LSUN-cat GMM model with PCA95.
+- Download pretrained models [here](https://drive.google.com/drive/folders/17fAzhyQGXwgSJYO1PhmbnSl72FAE4VCJ?usp=sharing).  We provide the LSUN-cat GMM model with PCA95 in this link, if you need more models, please contact me.
 
 - Extract features:
 
