@@ -38,6 +38,7 @@ If you find our code  helpful for your research, please consider citing:
   ```
 
 - Get GMM-GIQA score:
+
   first build the GMM model:
 
   ```
