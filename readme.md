@@ -36,13 +36,15 @@ If you find our code  helpful for your research, please consider citing:
   ```
   python knn_score.py path/to/test-folder --act_path path/to/activation --pca_path path/to/pca --K number/of/nearest-neighbor --output_file output/file/path --gpu gpu_id
   ```
-- Build GMM model:
+
+- Get GMM-GIQA score:
+  first build the GMM model:
 
   ```
   python get_gmm.py --act_path path/to/activation --kernel_number number-of-Gaussian-components --gmm_path path/to/gmm
   ```
-- Get GMM-GIQA score:
 
+  then get the GMM-GIQA score:
   ```
   python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --ourput_file output/file/path --gpu gpu_id
   ```
