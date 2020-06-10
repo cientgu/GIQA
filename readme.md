@@ -34,7 +34,7 @@ If you find our code  helpful for your research, please consider citing:
 - Get KNN-GIQA score:
 
   ```
-  python knn_score.py path/to/test-folder --act_path path/to/activation --pca_path path/to/pca --gpu gpu_id
+  python knn_score.py path/to/test-folder --act_path path/to/activation --pca_path path/to/pca --K number/of/nearest-neighbor --gpu gpu_id
   ```
 - Build GMM model:
 
