@@ -44,7 +44,7 @@ If you find our code  helpful for your research, please consider citing:
 - Get GMM-GIQA score:
 
   ```
-  python gmm_score.py path/to/dataset --gmm_path path/to/gmm --pca_path path/to/pca --gpu gpu_id
+  python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --gpu gpu_id
   ```
 
 - For all these running bash, if we do not use PCA (such as FFHQ in our released model), just remove the pca_rate and pca_path options.
