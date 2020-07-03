@@ -1,5 +1,5 @@
 # GIQA: Generated Image Quality Assessment
-This is the official pytorch implementation of "GIQA: Generated Image Quality Assessment" （<https://arxiv.org/abs/2003.08932>）. The major contributors of this repository include Shuyang Gu, Jianmin Bao, Dong Chen, Fang Wen at Microsoft Research Asia.
+This is the official pytorch implementation of ECCV2020 "GIQA: Generated Image Quality Assessment" （<https://arxiv.org/abs/2003.08932>）. The major contributors of this repository include Shuyang Gu, Jianmin Bao, Dong Chen, Fang Wen at Microsoft Research Asia.
 
 ## Introduction
 
