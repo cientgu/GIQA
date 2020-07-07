@@ -52,6 +52,9 @@ If you find our code  helpful for your research, please consider citing:
 
 - For all these running bash, if we do not use PCA (such as FFHQ), just remove the pca_rate and pca_path options.
 
+### LGIQA dataset
+- The LGIQA dataset contains three sub-dataset, named LGIQA-FFHQ, LGIQA-cat, LGIQA-cityscapes. You can download the cat and cityscapes sub-dataset [here](https://drive.google.com/drive/folders/1NHeFPdswV9lAmLtfiCppExi3oQ5lfSFH?usp=sharing). For security reason, if you need LGIQA-FFHQ dataset, please contact me. 
+
 
 ## Reference
 
