@@ -22,6 +22,7 @@ If you find our code  helpful for your research, please consider citing:
 - Linux.
 - Pytorch 1.0.0.
 - CUDA9.2 or 10.
+- sklearn 0.22.2
 
 ### Running code
 - Download pretrained models [here](https://drive.google.com/drive/folders/17fAzhyQGXwgSJYO1PhmbnSl72FAE4VCJ?usp=sharing).  We provide the LSUN-cat GMM model with PCA95 in this link, if you need more models, please contact me.
@@ -47,7 +48,7 @@ If you find our code  helpful for your research, please consider citing:
 
   then get the GMM-GIQA score:
   ```
-  python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --ourput_file output/file/path --gpu gpu_id
+  python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --output_file output/file/path --gpu gpu_id
   ```
 
 - For all these running bash, if we do not use PCA (such as FFHQ), just remove the pca_rate and pca_path options.
@@ -55,6 +56,8 @@ If you find our code  helpful for your research, please consider citing:
 ### LGIQA dataset
 - The LGIQA dataset contains three sub-dataset, named LGIQA-FFHQ, LGIQA-cat, LGIQA-cityscapes. You can download the cat and cityscapes sub-dataset [here](https://drive.google.com/drive/folders/1NHeFPdswV9lAmLtfiCppExi3oQ5lfSFH?usp=sharing). For security reason, if you need LGIQA-FFHQ dataset, please contact me. 
 
+### test
+- To test if you run our code correctly, we provide results of our provided GMM-GIQA model (on LSUN-cat dataset). We put it in the test folder. For test_images, by using the "get GMM-GIQA score command" and our provided model, you can get the results like results.txt. As we pointed out in our paper, the value of the score is meaningless, but you can use the rank of score to compare which has a higher quality. For different GMM models (especially different kernels), the score has a very large range (probably from -10^7 to 10^5), it's normal since we do not directly need the value. And also, for user's dataset, it should notice that the dataset Could Not contain too few images, otherwise, the GIQA score may be inaccurate.
 
 ## Reference
 
