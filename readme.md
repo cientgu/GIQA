@@ -1,6 +1,8 @@
 # GIQA: Generated Image Quality Assessment
 This is the official pytorch implementation of ECCV2020 "GIQA: Generated Image Quality Assessment" （<https://arxiv.org/abs/2003.08932>）. The major contributors of this repository include Shuyang Gu, Jianmin Bao, Dong Chen, Fang Wen at Microsoft Research Asia.
 
+A related paper which adopts GMM-GIQA to improve the performance of GANs: PriorGAN（<https://arxiv.org/abs/2006.16990>）.
+
 ## Introduction
 
 **GIQA** aims to solve the problem of quality evaluation of a single generated image. In this source, we release the code of our GMM-GIQA and KNN-GIQA which are convenient to use.
