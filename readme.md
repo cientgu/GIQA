@@ -32,12 +32,12 @@ If you find our code  helpful for your research, please consider citing:
 - Extract features:
 
   ```
-  python write_act.py path/to/dataset --act_path path/to/activation --pca_rate pca_rate --pca_path path/to/pca --gpu gpu_id
+  python write_act.py path/to/read/dataset --act_path path/to/write/activation --pca_rate pca_rate --pca_path path/to/write/pca --gpu gpu_id
   ```
 - Get KNN-GIQA score:
 
   ```
-  python knn_score.py path/to/test-folder --act_path path/to/activation --pca_path path/to/pca --K number/of/nearest-neighbor --output_file output/file/path --gpu gpu_id
+  python knn_score.py path/to/test-folder --act_path path/to/read/activation --pca_path path/to/read/pca --K number/of/nearest-neighbor --output_file output/file/path --gpu gpu_id
   ```
 
 - Get GMM-GIQA score:
@@ -45,12 +45,12 @@ If you find our code  helpful for your research, please consider citing:
   first build the GMM model:
 
   ```
-  python get_gmm.py --act_path path/to/activation --kernel_number number-of-Gaussian-components --gmm_path path/to/gmm
+  python get_gmm.py --act_path path/to/read/activation --kernel_number number-of-Gaussian-components --gmm_path path/to/write/gmm
   ```
 
   then get the GMM-GIQA score:
   ```
-  python gmm_score.py path/to/test-folder --gmm_path path/to/gmm --pca_path path/to/pca --output_file output/file/path --gpu gpu_id
+  python gmm_score.py path/to/test-folder --gmm_path path/to/read/gmm --pca_path path/to/read/pca --output_file output/file/path --gpu gpu_id
   ```
 
 - For all these running bash, if we do not use PCA (such as FFHQ), just remove the pca_rate and pca_path options.
