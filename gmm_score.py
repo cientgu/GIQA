@@ -6,7 +6,8 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import numpy as np
 import torch
 from scipy import linalg
-from scipy.misc import imread
+# from scipy.misc import imread
+from PIL import Image
 from torch.nn.functional import adaptive_avg_pool2d
 
 import pickle
@@ -38,6 +39,8 @@ parser.add_argument('--pca_path', type=str, default=None)
 parser.add_argument('--gmm_path', type=str, default="/mnt/blob/code/image-judge/gaussian/pca_stat/stat_cat/act95_7")
 parser.add_argument('--output_file', type=str, default="/mnt/blob/datasets/generation_results/score_results/try_out.txt")
 
+def imread(filename):
+    return np.asarray(Image.open(filename).convert('RGB'), dtype=np.uint8)[..., :3]
 
 def get_activations(files, model, batch_size, dims, cuda, verbose, pca_path, gmm_path, output_file):
     
