@@ -6,7 +6,8 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import numpy as np
 import torch
 from scipy import linalg
-from scipy.misc import imread
+# from scipy.misc import imread
+from PIL import Image
 from torch.nn.functional import adaptive_avg_pool2d
 from sklearn.decomposition import PCA
 import pickle
@@ -35,6 +36,8 @@ parser.add_argument('--pca_rate', default=0.95, type=float)
 parser.add_argument('--pca_path', default=None, type=str)
 parser.add_argument('--act_path', default=None, type=str)
 
+def imread(filename):
+    return np.asarray(Image.open(filename).convert('RGB'), dtype=np.uint8)[..., :3]
 
 def get_activations(files, model, batch_size=50, dims=2048,
                     cuda=False, verbose=False):
